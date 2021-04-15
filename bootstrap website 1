@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- G: Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- G: CSS SAYFASI İÇİN EKLENDİ: -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <title>Bootstrap \ site yapımı</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- YAZI KARAKTERİ İÇİN EKLENDİ: -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- G: DAHA SONRASINDA CSS BODY'E font-family: 'Raleway', sans-serif; YAZI KARAKTERİ DE EKLENDİ.  -->
+
+    <script src="https://kit.fontawesome.com/5bc191451e.js" crossorigin="anonymous"></script> <!--G: Awesome'DAN GELEN LİNK -->
+  
+  </head>
+
+
+  <body>
+
+    <!-- menu area-->
+
+    <!-- G: nav bar (bg-dark) ve menu isimlerinin (navbar-expand) renk değişim... -->
+<nav class="navbar navbar-expand-lg navbar-expand-lg bg-dark fixed-top"> <!--...satırı ve nav barın sabitlendiği (fixed-top)satır. navbar-toggler: navbar'ın köşelerini yuvarlar.-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap | Örnek site</a> <!--G: SAYFADA, SOL ÜST KÖŞEDE BULUNAN YER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown"><!-- G: justify-content-end YAZILARAK MENULER SAĞA YASLANDI.--> 
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="" href="#carouselExampleIndicators">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+        
+            <li class="nav-item">
+              <a class="nav-link" href="#our_team">OUR TEAM</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+        
+          </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    <!-- __________ Slider area __________-->
+  
+      <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
+      <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <!-- G: DAHA FAZLA RESİM EKLMEK İÇİN BURAyA ALTTAKİ SATIRDAN EKLENMELİ VE slide-to VE "Silde ..." +1 ARTIRILMALI: 
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>  -->
+  </div>
+
+
+  <!-- G: SLİDE İÇİN KULLANILAN RESİMLER...-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="yol.jpg" class="d-block w-100 photo_slider" alt="..."><!-- G: photo_slider İBARESİ, CSS İLE MÜDAHALE EDEBİLMEK İÇİN KONDU. SLİDE, SİTEDE KULLANILAN RESMİN BOYUTUNA GÖRE AŞAĞI YUKARI İNİP KALKMASIN DİYE. -->
+    </div>
+    <div class="carousel-item">
+      <img src="orman.jpg" class="d-block w-100 photo_slider" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="istanbul.jpg" class="d-block w-100 photo_slider" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="agaclar.png" class="d-block w-100 photo_slider" alt="...">
+    </div>
+
+    <!--G: DAHA FAZLA RESİM EKLEMEK İÇİN EK SATIR:
+     <div class="carousel-item">
+      <img src="..." class="d-block w-100 photo_slider" alt="...">
+    </div>--> 
+    <!-- G: BU ALAN İÇERİSİNE KONULDU. FOTOĞRAFLARI ÖLÇEKLENDİRMEK İÇİN photo_slider İBARESİ KULLANILDI.-->
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+   <!-- __________ about area __________-->
+
+   <section class="p-5 text-center about" id="about"> <!--G: class="p-5" (padding 5) İLE YUKARIDAKİ SLİDE'A YAPIŞIK OLAN DURUM AŞAĞI ÇEKİLDİ, "text-center" İLE YAZI ORTALANDI. -->
+      <div class="conteiner"> <!--G:-->
+       <h2 class="mb-5 font-weight-bold">About</h2> <!--G:-->
+       <hr class="lane"><i class="fas fa-leaf igri"></i> <!--G: YAPRAK İKONU İÇİN i class'I KULLANILDI. "lane" class'ı, hr çizgisine şekil verebilmek için açıldı. "lane" olmadan önce <hr>'den dolayı ince, gri bir çizgi vardı. igri ise "lane" ile oluşturulan border çizgisinin ortasına yaprak desenini koyabilmek için yazıldı.-->
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi deserunt atque aliquam, vero. Dicta alias iusto temporibus nesciunt aut dolor. Voluptate porro tenetur doloribus saepe cumque iure, ipsam necessitatibus consequatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere architecto, sequi dolores nam ad ea iure maxime vel officiis voluptas aliquid reiciendis dolore, voluptatum blanditiis, culpa tempora unde, quo tempore?</p> <!--G: Lorem yaz, tabs tuşuna bas. otomatik Lorem ipsum satırı yazar.-->
+
+       <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Eos nulla recusandae, ullam repellat aperiam, fugiat inventore, possimus ipsam tempore voluptatibus modi ex consequatur maiores, in iure aliquid exercitationem aspernatur quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut animi expedita, blanditiis, obcaecati distinctio recusandae, autem tempore assumenda fugiat dolores, ipsa illum. Aliquam, fugiat fuga eveniet, dolore necessitatibus consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus, tenetur eligendi eos. Repellat culpa illum repellendus consequatur, reiciendis officiis consectetur minus perferendis. Adipisci necessitatibus aspernatur ipsa aut nihil, consequuntur?</p> <!--G:-->
+     </div>
+   </section>
+
+   <!-- __________ our team area __________-->
+
+    <section class="p-5 text-center our_team" id="our_team"> <!--G: class="p-5" (padding 5) İLE YUKARIDAKİ SLİDE'A YAPIŞIK OLAN DURUM AŞAĞI ÇEKİLDİ, "text-center" İLE YAZI ORTALANDI. -->
+      <div class="conteiner"> <!--G: soldan sağdan boşluklar oluştursun diye bu class içine alındı.-->
+       <h2 class="mb-5 font-weight-bold">Our Team</h2> <!--G:-->
+       <hr class="lane"><i class="fas fa-leaf iwhite"></i> <!--G: YAPRAK İKONU İÇİN i class'I KULLANILDI. "lane" class'ı, hr çizgisine şekil verebilmek için açıldı. "lane" olmadan önce <hr>'den dolayı ince, gri bir çizgi vardı. iwhite ise "lane" ile oluşturulan border çizgisinin ortasına yaprak desenini koyabilmek için yazıldı.-->
+        
+        <!-- __________ cards area __________-->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4"> <!--G: row-cols-md-3 İFADESİ, BİR SATIRDA KAÇ ADET GÖRSEL OLACAĞINI BELİRLER -->
+          <div class="col">
+            <div class="card shadow"> <!--G: shadow İFADESİ KARTA GÖLGE VERMEK İÇİN CLASS'A EKLENDİ-->             
+              <img src="man.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Artist Kemal</h5>
+                <p class="card-text">Havalıdır. Artistir. <br> Burnundan kıl aldırmaz.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="man_a_photografer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rontçu Fuat</h5>
+                <p class="card-text">Elalemin özeli nedir bilmez, <br> saygı duymaz.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="man_and_woman.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Çifte ve Kumru</h5>
+                <p class="card-text">Herkes birbirinden tiksiniyor da sanki, sadece bunlar birbirini seviyor! Öyle pembiş halleri var.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="man_with_book.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Entel Lütfü</h5>
+                <p class="card-text">Okumayı sever. Bildiğini paylaşmaktan çekinmez. Ama biraz da küstahtır.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="woman.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">İzmirli Hülya</h5>
+                <p class="card-text">Mahalle yanarken saçını tarar. En sevdiği tatlı Halka Tatlısı.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="woman_hold_child.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anaç Mualla</h5>
+                <p class="card-text">Yavrusunun rızkının peşinde. <br> Ne yapsın.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- </section>'I BU ŞEKİLDE KAPATMAZSAN BİR ALT SATIRDAN AYRILMAZ SAYFA. GRİ ZEMİN BEYAZ ZEMİNE YAPIŞIK GÖRÜNÜR -->'
+
+<!-- __________ gallery area __________-->
+
+    <section class="p-5 text-center gallery" id="gallery"> <!--G: class="p-5" (padding 5) İLE YUKARIDAKİ SLİDE'A YAPIŞIK OLAN DURUM AŞAĞI ÇEKİLDİ, "text-center" İLE YAZI ORTALANDI. -->
+      <div class="conteiner"> <!--G:-->
+        <h2 class="mb-5 font-weight-bold">Gallery</h2> 
+        <hr class="lane"><i class="fas fa-leaf igri"></i> <!--G: YAPRAK İKONU İÇİN i class'I KULLANILDI. "lane" class'ı, hr çizgisine şekil verebilmek için açıldı. "lane" olmadan önce <hr>'den dolayı ince, gri bir çizgi vardı. igri ise "lane" ile oluşturulan border çizgisinin ortasına yaprak desenini koyabilmek için yazıldı. "fas fa-leaf" ifadesi yaprak deseninin kodu.-->
+      
+        <div class="row"> <!--G: BU SATIR, SAYFADA BİR RESİM SATIRI OLUŞTURMAK İÇİN YAZILDI.-->
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g1.png"> <!--G: BU SATIR, RESME TIKLANDIĞINDA RESMİN BAŞKA BİR PENCEREDE AÇILMASI İÇİN YAZILDI.-->
+              <img src="g1.png" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g2.jpg">
+              <img src="g2.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>        
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g3.jpg">
+              <img src="g3.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>        
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g4.jpg">
+              <img src="g4.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>  
+
+        </div>
+
+        <div class="row"> <!--G: BU SATIR, SAYFADA BİR RESİM SATIRI OLUŞTURMAK İÇİN YAZILMIŞTI, BURADA DA 2. RESİM SATIRINI OLUŞTURMAK İÇİN YAZILDI. 
+          HER SATIR İÇİN BU div EKLENMELİ-->
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g5.jpg">
+              <img src="g5.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g6.jpg">
+              <img src="g6.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>        
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g7.jpg">
+              <img src="g7.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>        
+
+          <div class="col-md-3">
+            <figure class="figure">
+              <a href="g8.jpg">
+              <img src="g8.jpg" class="figure-img img-fluid rounded shadow" alt="..."><!--G: class'A "shadow" EKLENERAK GÖŞGE VERİLDİ.-->
+              <figcaption class="figure-caption">A caption for the above image (resim yazısı).</figcaption><!--G: RESİM YAZISI OLSUN İSTENİRSE DİYE EKLENDİ. BU SATIR, <img> SATIRININ  ÜSTÜNDE OLURSA YAZIYI RESMİN ÜZERİNE EKLER.-->
+              </a> 
+            </figure>
+          </div>  
+                          
+        </div>
+
+      </div>
+    </section>
+
+<!-- __________ contact area __________-->
+
+    <section class="p-5 text-center contact" id="contact"> <!--G: class="p-5" (padding 5) İLE YUKARIDAKİ SLİDE'A YAPIŞIK OLAN DURUM AŞAĞI ÇEKİLDİ, "text-center" İLE YAZI ORTALANDI. -->
+      <div class="conteiner"> <!--G: soldan sağdan boşluklar oluştursun diye bu class içine alındı.-->
+       <h2 class="mb-5 font-weight-bold">Contact</h2> <!--G:-->
+       <hr class="lane"><i class="fas fa-leaf iwhite"></i> <!--G: YAPRAK İKONU İÇİN i class'I KULLANILDI. "lane" class'ı, hr çizgisine şekil verebilmek için açıldı. "lane" olmadan önce <hr>'den dolayı ince, gri bir çizgi vardı. iwhite ise "lane" ile oluşturulan border çizgisinin ortasına yaprak desenini koyabilmek için yazıldı.-->
+
+       <form action="https://formspree.io/mail adresi" method="post" class="col-md-3 text-left m-auto"><!--G: col-md-10, ON SÜTUNLUK BİR YER KAPLAYACAĞINI İFADE EDER, text-left, FORM YAZILARINI SOLA HİZALAR, m-auto, MARGİN'İ 
+          OTOMATİK YAPAR, SAYFAYA ORTALAR.--> 
+          
+          <div class="form-group row">
+            <label for="" class="col-md-4 align-self-center"><strong>Name:</strong></label><!--G: col-md-4 İLE DÖRT SÜTUNLUK BİR ALAN KAPLAMASINI SAĞLADIM, align-self-center İLE KENDİ İÇİNDE ORTALASIN İSTEDİM. -->
+            <input type="text" class="form-control col-md-8"> 
+          </div>   
+
+          <div class="form-group row">
+            <label for="" class="col-md-4 align-self-center"><strong>Email Address:</strong></label><!--G: col-md-4 İLE DÖRT SÜTUNLUK BİR ALAN KAPLAMASINI SAĞLADIM, align-self-center İLE KENDİ İÇİNDE ORTALASIN İSTEDİM. -->
+            <input type="email" class="form-control col-md-8"> 
+          </div>        
+
+          <div class="form-group row">
+            <label for="" class="col-md-4 align-self-center"><strong>Phone:</strong></label><!--G: col-md-4 İLE DÖRT SÜTUNLUK BİR ALAN KAPLAMASINI SAĞLADIM, align-self-center İLE KENDİ İÇİNDE ORTALASIN İSTEDİM. -->
+            <input type="text" class="form-control col-md-8"> 
+          </div>  
+
+          <div class="form-group row">
+            <label for="" class="col-md-4 align-self-center"><strong>Title:</strong></label><!--G: col-md-4 İLE DÖRT SÜTUNLUK BİR ALAN KAPLAMASINI SAĞLADIM, align-self-center İLE KENDİ İÇİNDE ORTALASIN İSTEDİM. -->
+            <input type="text" class="form-control col-md-8"> 
+          </div>  
+
+          <div class="form-group row">
+            <label for="" class="col-md-1 align-self-center"><strong>Your Message:</strong></label><!--G: col-md-4 İLE DÖRT SÜTUNLUK BİR ALAN KAPLAMASINI SAĞLADIM, align-self-center İLE KENDİ İÇİNDE ORTALASIN İSTEDİM. -->
+            <textarea name="" id="" cols="30" rows="5" class="form-control col-md-4"></textarea> 
+          </div>  
+
+          <div class="form-group row">
+            <button type="submit" class="m-2 col-md-3 btn btn-primary">SEND</button>
+          </div>                               
+       </form>
+
+
+      </div>
+    </section>
+
+    <!-- __________ footer area __________-->
+
+    <div class="bg-dark text-light text-center"> <!-- G: bg-dark İLE ZEMİNİ KOYU YAPTIM, text-light İLE YAZILARI AÇIK RENK YAPTIM, text-center İLE YAZILARI ORTAYA ALDIM.-->
+      <p class="align-middle p-5 mb-0"><!-- G: p-5, padding 5 YANİ, 4 BİR YANDAN DA 5 PX ANLAMINA GELİR. mb-5 margin bottom 5 ANLAMINA GELİR.-->
+        <span>Tüm Hakları Saklıdır &copy; | 2020</span><br>
+        <span>Desing by <b>Gökay Özçoban</b></span>
+      </p>
+       
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
+Buradan itibaren css kodları başlıyor:
+
+
+.photo_slider{
+	height: 700px;	
+}
+body{
+	padding-top: 55px; /* nav_bar'IN ALTINDA KALAN SLİDE'I AŞAĞI ÇEKMEK İÇİN.*/
+	font-family: 'Raleway', sans-serif;
+}
+.about{
+	background-color: #f2f2f2f2;
+}
+.lane{
+	border:none;
+	border-top: 3px solid #343a40; /* <hr> çizgisine "lane" class'ı css'leri verilerek çizgiye kalınlık ve renk verildi. Bu şekilde border çizgisi tüm ekranı çizer.*/
+	max-width: 250px; /* Yukarıdaki koddan dolayı tüm ekranı çizen boder çizgisi küçültüldü.*/
+	margin: 25px auto; /* margin ile yukarıdan aşağıdan 25px, soldan sağdan da otomatik olmak üzere boşluk verildi.*/
+}
+.igri{
+	color: #343a40; /* yaprağı temsil eden igri class'ına lane ile aynı renk verildi.*/
+	position: relative; /*relative, akışı bozmadan objenin yukarı aşağı konum değiştirmesini sağlar.*/
+	top:-55px; /* relative özelliğine verilen yön. Bu şekilde, sayfadaki yaprak deseni border çizgisinin üzerine çıkar.*/
+	font-size: 40px; /* Yaprak desenini biraz daha büyütmek için kullanıldı.*/
+	border: 10px solid #f2f2f2f2; /* Yaprak desenine sayfanın arka plan rengiyle aynı renkte çerçeve eklendi. Bu şekilde background color kullanılabilinecek. */
+	background-color: #f2f2f2f2; /* Sayfanın arka plan rengiyle aynı renk arka plan eklenince border çizgisinin ortasını silerek ortaya yerleşti (yaprak deseni).*/
+}
+.iwhite{
+	color: #343a40; /* yaprağı temsil eden iwhite class'ına lane ile aynı renk verildi.*/
+	position: relative; /*relative, akışı bozmadan objenin yukarı aşağı konum değiştirmesini sağlar.*/
+	top:-55px; /* relative özelliğine verilen yön. Bu şekilde, sayfadaki yaprak deseni border çizgisinin üzerine çıkar.*/
+	font-size: 40px; /* Yaprak desenini biraz daha büyütmek için kullanıldı.*/
+	border: 10px solid white; /* Yaprak desenine sayfanın arka plan rengiyle aynı renkte çerçeve eklendi. Bu şekilde background color kullanılabilinecek. */
+	background-color: white; /* Sayfanın arka plan rengiyle aynı renk arka plan eklenince border çizgisinin ortasını silerek ortaya yerleşti (yaprak deseni).*/
+}
+.our_team{
+	background-color: white;
+}
+.card{
+	width:400px;
+	height:300px;
+}
+.our_team img{
+	height: 190px;
+	width: 100px;
+	position: relative; /*Görseli ortalamak için yazıldı.*/
+	left: 100px; /*Görseli ortalamak için yazılan satırın devamı.*/	
+}
+.our_team img:hover{
+	opacity: 0.8;
+}
+.our_team h5{
+	font-weight: bold; /* Kartlardaki isimleri kalın yapmak için kullanıldı.*/
+}
+.gallery{
+	background-color: #f2f2f2f2;
+}
+.figure:hover{
+	opacity: 0.8; /* BİR ALT SATIRA transition: 1s; SATIRI YAZILARAK OPAKLIK GEÇİŞİ 1 SANİYEYE YAYILABİLİR. */
+}
+.figure a{
+	text-decoration: none; /* RESİM YAZILARININ ALTINDAKİ ÇİVGİYİ SİLER.*/
+}
+.figure img { /* SAYFADA BULUNAN RESİMLER DAHA DÜZENLİ DURSUN DİYE YAZILDI.*/
+	width:300px;
+	height:200px;
+}
+
